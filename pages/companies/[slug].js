@@ -36,7 +36,8 @@ export const getStaticProps = async ({ params }) => {
   })
 
   return {
-    props: { company: items[0] }
+    props: { company: items[0] },
+    revalidate: 1,
   }
 
 }

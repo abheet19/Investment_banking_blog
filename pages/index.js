@@ -15,7 +15,8 @@ export async function getStaticProps() {
 
     props: {
       companies: res.items
-    }
+    },
+    revalidate: 1,
   }
 
 }
